@@ -118,7 +118,7 @@
 				font-family: 'Lato', sans-serif;
 	    		color: #2D2D2D;
 	    		margin: 0;
-	    		overflow: hidden;
+	    		overflow-x: hidden;
 
 	    		color: #FFF;
 
@@ -205,6 +205,32 @@
 				margin-right: -8vw;
 				transition: all 1s ease;
 			}
+
+			iframe {
+				width: 30vw;
+				height: 30vw;
+
+				border: none;
+
+				overflow: hidden;
+			}
+
+			#project_table {
+				width: 70vw;
+
+				margin-left: auto;
+				margin-right: auto;
+
+				padding-top: 5vh;
+			}
+			#project_table td {
+				width: 50%;
+				text-align: center;
+			}
+
+			.spacer {
+				height: 10vh;
+			}
 		</style>
 
 	</head>
@@ -229,17 +255,61 @@
 			</table>
 		</div>
 
+		<table id="project_table">
+			<tr>
+				<td>
+					<h3>Triangle Builder</h3>
+					<p class="light">Click to add vertices.</p>
+				</td>
+				<td><iframe src="https://editor.p5js.org/jweichert/embed/kdG_n62ZV"></iframe></td>
+			</tr>
 
-		<div id="logo_container">
-		</div>
+			<tr class="spacer"></tr>
+
+			<tr>
+				<td>
+					<iframe src="https://editor.p5js.org/jweichert/embed/uV3bq2WUm"></iframe>
+				</td>
+				<td>
+					<h3>Bunny Simulator</h3>
+					<p class="light">Don't click, just watch.</p>
+				</td>
+			</tr>
+
+			<tr class="spacer"></tr>
+
+			<tr>
+					<td>
+						<h3>Anti-Gravity Chamber</h3>
+						<p class="light">Make Einstein mad (by clicking on the screen).</p>
+					</td>
+					<td>
+						<iframe src="https://editor.p5js.org/jweichert/embed/BJqEYOvTX"></iframe>
+					</td>
+			</tr>
+
+			<!--<tr class="spacer"></tr>
+
+			<tr>
+				<td>
+					<iframe src="https://editor.p5js.org/jweichert/embed/Sk_cMzBh7"></iframe>
+				</td>
+				<td>
+					<h3>Pong</h3>
+					<p class="light">A classic.</p>
+				</td>
+			</tr>-->
+		</table>
+
+
 
 				<div id="right">
 					<a href="http://james-weichert.github.io" target="_new"><div class="link" id="top" onmouseover="link_extend('top')" onmouseout="link_retract('top')">
 						<p class="light">Portfolio</p>
 					</div></a>
-					<div class="link" id="middle" onmouseover="link_extend('middle')" onmouseout="link_retract('middle')">
+					<a href="projects.html"><div class="link" id="middle" onmouseover="link_extend('middle')" onmouseout="link_retract('middle')">
 						<p class="light">Projects</p>
-					</div>
+					</div></a>
 					<a href="index.html"><div class="link" id="bottom" onmouseover="link_extend('bottom')" onmouseout="link_retract('bottom')">
 						<p class="light">Dash</p>
 					</div></a>
